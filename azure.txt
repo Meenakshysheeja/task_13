@@ -1,0 +1,36 @@
+1. Creating a Free VM in Azure
+
+Cloud Provider: Microsoft Azure
+VM Type: Ubuntu Server (or your selected VM type)
+
+Steps Taken:
+Logged into Azure account.
+Navigated to "Virtual Machines" and clicked on + Create > Virtual Machine.
+Selected the free tier and Ubuntu Server.
+Allowed SSH access during network setup.
+Deployed the VM successfully.
+VM Public IP: 20.204.130.13
+
+2. Pinging the VM from Kali Linux
+
+ping 20.204.130.13
+
+3. SSH Login to the VM
+
+sudo ssh -i /home/kali/Documents/VM_key.pem azureuser@20.204.130.13
+
+4. Running the curl ifconfig.me Command 
+  49.37.235.91 
+
+5. Ping the public IP from VM 
+azureuser@VM:~$ ping 49.37.235.91 
+
+6.  Exploring the VM and Shutdown
+Basic Commands Used:
+ls (to list files)
+top (to check processes)
+df -h (to check disk usage)
+sudo shutdown now
+
+7. VM Termination
+Deleted the VM via Azure portal
